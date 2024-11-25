@@ -1,22 +1,22 @@
 @charset "utf-8";
 
-$color-text: #1B2D55;
-$color-main: #DEF6FF;
-$color-sub: #FFF5DE;
-$color-bg: #E8EDF1;
+$color-text: #1b2d55;
+$color-main: #def6ff;
+$color-sub: #fff5de;
+$color-bg: #e8edf1;
 
 $breakpoints: (
   "nav": "screen and (min-width: 960px)",
   "desktop": "screen and (min-width: 740px)",
-  ) !default;
+) !default;
 
 @mixin m-query($breakpoint) {
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
 }
-
-@mixin m-inner($w: (640/740)*100%, $mw: 1140px) {
+/* prettier-ignore */
+@mixin m-inner($w: (640/740) * 100%, $mw: 1140px) {
   width: $w;
   max-width: $mw;
   margin-left: auto;
@@ -31,24 +31,23 @@ $breakpoints: (
 }
 
 @mixin m-title-main() {
-  margin-bottom: (80em/48
-  );
-font-size: f-rem(48);
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: bold;
-line-height: (58/48);
+  margin-bottom: (80em/48);
+  font-size: f-rem(48);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  line-height: (58/48);
 }
 
 @mixin m-title-sub() {
   margin-bottom: (40em/36);
   font-size: f-rem(36);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   line-height: (44/36);
 }
 
 @function f-rem($value) {
-  @return ($value/16)+rem;
+  @return ($value/16) + rem;
 }
 
 /* base
@@ -135,7 +134,7 @@ img {
   margin: 0 auto (60em/14);
 
   @include m-query(desktop) {
-    margin: 0
+    margin: 0;
   }
 
   &__title {
@@ -190,7 +189,7 @@ img {
 
   &__content {
     @include m-query(desktop) {
-      width: (500/1140)*100%;
+      width: (500/1140) * 100%;
     }
   }
 
@@ -215,20 +214,24 @@ img {
     display: inline-block;
     margin-right: (20em/12);
     margin-bottom: (20em/12);
-    padding: (15em/12) (30em/12);
-    border-radius: 20px;
-    text-align: center;
-    font-size: f-rem(12);
-    font-weight: bold;
-    line-height: (14/12);
-    background-color: #fff;
+
+    a {
+      display: block;
+      padding: (15em/12) (30em/12);
+      border-radius: 20px;
+      text-align: center;
+      font-size: f-rem(12);
+      font-weight: bold;
+      line-height: (14/12);
+      background-color: #fff;
+    }
   }
 
   &__pic {
     margin-top: (60em/14);
 
     @include m-query(desktop) {
-      width: (580/1140)*100%;
+      width: (580/1140) * 100%;
       margin-top: 0;
     }
   }
@@ -246,7 +249,6 @@ img {
   line-height: 1;
   background-color: $color-text;
 }
-
 
 /* index.html
 --------------------*/
@@ -319,7 +321,7 @@ img {
     border-bottom: 1px solid;
 
     @include m-query(desktop) {
-      width: (540/1140)*100%;
+      width: (540/1140) * 100%;
       margin-bottom: 0;
       padding-bottom: 0;
       border: 0;

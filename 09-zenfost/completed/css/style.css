@@ -1,7 +1,8 @@
+/* prettier-ignore */
 /* base
 --------------------*/
 body {
-  color: #1B2D55;
+  color: #1b2d55;
   font-size: 0.875rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.7142857143;
@@ -65,7 +66,7 @@ img {
 /* footer */
 .footer {
   padding: 8.5714285714em 0 14.2857142857em;
-  background-color: #E8EDF1;
+  background-color: #e8edf1;
 }
 .footer__inner {
   width: 86.4864864865%;
@@ -178,6 +179,9 @@ img {
   display: inline-block;
   margin-right: 1.6666666667em;
   margin-bottom: 1.6666666667em;
+}
+.unit__item a {
+  display: block;
   padding: 1.25em 2.5em;
   border-radius: 20px;
   text-align: center;
@@ -206,7 +210,7 @@ img {
   color: #fff;
   font-weight: bold;
   line-height: 1;
-  background-color: #1B2D55;
+  background-color: #1b2d55;
 }
 
 /* index.html
@@ -214,7 +218,7 @@ img {
 /* about */
 .about {
   padding-bottom: 4.2857142857em;
-  background-color: #DEF6FF;
+  background-color: #def6ff;
 }
 .about__inner {
   padding: 10.7142857143em 0 35.7142857143em;
@@ -267,7 +271,7 @@ img {
   margin: 0 auto 0.5208333333em;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background-color: #FFF5DE;
+  background-color: #fff5de;
 }
 .advantages__inner {
   width: 86.4864864865%;
@@ -307,7 +311,7 @@ img {
 /* features */
 .features {
   padding: 8.5714285714em 0;
-  background-color: #FFF5DE;
+  background-color: #fff5de;
 }
 .features__title {
   margin-bottom: 1.6666666667em;
@@ -324,7 +328,7 @@ img {
   margin: 0 auto 0.5208333333em;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background-color: #DEF6FF;
+  background-color: #def6ff;
 }
 .features__inner {
   width: 86.4864864865%;
